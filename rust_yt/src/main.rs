@@ -9,8 +9,10 @@ mod module_08_option_example;
 mod module_09_result_example;
 mod module_10_option_result_combination;
 mod module_11_trait_example;
+mod module_12_concurrency_example;
 
-fn main() {
+#[tokio::main]
+async fn main() {
     // module_01_data_types_examples::demo();
     // module_02_control_flows_examples::demo();
     // module_03_functions_closure_examples::demo();
@@ -19,7 +21,8 @@ fn main() {
     // module_07_enum_examples::demo();
     // module_09_result_example::demo();
     // module_10_option_result_combination::demo();
-    module_11_trait_example::demo();
+    // module_11_trait_example::demo();
+    module_12_concurrency_example::demo().await;
 
     println!("\n\n\n");
 }
