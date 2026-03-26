@@ -8,6 +8,7 @@ mod module_07_enum_examples;
 mod module_08_option_example;
 mod module_09_result_example;
 mod module_10_option_result_combination;
+mod module_11_trait_example;
 
 fn main() {
     // module_01_data_types_examples::demo();
@@ -17,7 +18,8 @@ fn main() {
     // module_06_struct_examples::demo();
     // module_07_enum_examples::demo();
     // module_09_result_example::demo();
-    module_10_option_result_combination::demo();
+    // module_10_option_result_combination::demo();
+    module_11_trait_example::demo();
 
     println!("\n\n\n");
 }
