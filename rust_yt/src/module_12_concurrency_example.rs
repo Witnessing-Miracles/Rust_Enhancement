@@ -5,13 +5,13 @@ pub fn basic_thread_example() {
     let handle = thread::spawn(|| {
         for i in 1..6 {
             println!("Blockchain node thread says: {}", i);
-            thread::sleep(Duration::from_millis(500));
+            thread::sleep(Duration::from_millis(1500));
         }
     });
 
     for i in 1..6 {
         println!("Main blockchain operation says: {}", i);
-        thread::sleep(Duration::from_millis(1500));
+        thread::sleep(Duration::from_millis(500));
     }
 
     handle.join().unwrap();
@@ -109,11 +109,11 @@ pub fn spawn_multiple_threads_example() {
 
 pub async fn demo()
 {
-    // basic_thread_example();
+    basic_thread_example();
     // thread_with_move_example();
     // basic_async_example().await;
     // parallel_async_example().await;
     // thread_with_channels_example();
     // async_with_return_value_example().await;
-    spawn_multiple_threads_example();
+    // spawn_multiple_threads_example();
 }
