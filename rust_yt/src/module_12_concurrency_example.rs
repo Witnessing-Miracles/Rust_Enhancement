@@ -109,11 +109,11 @@ pub fn spawn_multiple_threads_example() {
 
 pub async fn demo()
 {
-    basic_thread_example();
+    // basic_thread_example();
     // thread_with_move_example();
     // basic_async_example().await;
     // parallel_async_example().await;
     // thread_with_channels_example();
     // async_with_return_value_example().await;
-    // spawn_multiple_threads_example();
+    spawn_multiple_threads_example();
 }
