@@ -1,7 +1,6 @@
 import 'dotenv/config.js'
 import {Connection, PublicKey, sendAndConfirmTransaction, Transaction} from "@solana/web3.js";
 import { getExplorerLink, getKeypairFromEnvironment } from '@solana-developers/helpers';
-import { createMint } from '@solana/spl-token';
 import { createCreateMetadataAccountV3Instruction } from '@metaplex-foundation/mpl-token-metadata'
 
 const keyPair = process.env.KEYPAIR || null

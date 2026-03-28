@@ -51,7 +51,7 @@ const signature = await transfer(
     36000000000
 )
 
-console.log(`✅ Transferred 18 tokens! ${signature}`)
+console.log(`✅ Transferred 36 tokens! ${signature}`)
 
 const link = getExplorerLink('transaction', signature.toString(), "devnet")
 console.log(`Check it out: ${link}`)
